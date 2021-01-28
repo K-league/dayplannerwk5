@@ -10,3 +10,15 @@ var wkDay = [
     {hour: "04"},
     {hour: "05"},
 ]
+//generate current date in header
+function getDate() {
+    var todaysDate = moment().format('MMM Do YY');
+    $("#currentDay").text(todaysDate);
+};
+//send input to local storage
+function saveInput() {
+    localStorage.setItem("wkDay", JSON.stringify(wkDay));
+};
+//color change
+
+//save button
